@@ -1,7 +1,9 @@
 #!/bin/bash
 
 LANGUAGE=$1
-DATABIN=../data-bin
+DATABIN=../data/neural/data-bin
+
+CKPTS=../data/neural/checkpoints
 
 # Encoder embedding dim.
 EED=256
