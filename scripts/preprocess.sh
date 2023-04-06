@@ -1,3 +1,5 @@
+#!/bin/bash
+
 LANGUAGE=$1
 DATABIN=../data-bin
 
