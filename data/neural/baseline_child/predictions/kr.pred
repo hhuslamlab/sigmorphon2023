@@ -1,0 +1,350 @@
+2023-04-08 16:01:31 | INFO | fairseq_cli.generate | Namespace(all_gather_list_size=16384, batch_size=None, batch_size_valid=None, beam=5, bf16=False, bpe=None, broadcast_buffers=False, bucket_cap_mb=25, checkpoint_shard_count=1, checkpoint_suffix='', constraints=None, cpu=False, criterion='cross_entropy', curriculum=0, data='data-bin/kr', data_buffer_size=10, dataset_impl=None, ddp_backend='c10d', decoding_format=None, device_id=0, disable_validation=False, distributed_backend='nccl', distributed_init_method=None, distributed_no_spawn=False, distributed_port=-1, distributed_rank=0, distributed_world_size=1, distributed_wrapper='DDP', diverse_beam_groups=-1, diverse_beam_strength=0.5, diversity_rate=-1.0, empty_cache_freq=0, eval_bleu=False, eval_bleu_args=None, eval_bleu_detok='space', eval_bleu_detok_args=None, eval_bleu_print_samples=False, eval_bleu_remove_bpe=None, eval_tokenized_bleu=False, fast_stat_sync=False, find_unused_parameters=False, fix_batches_to_gpus=False, fixed_validation_seed=None, force_anneal=None, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, gen_subset='test', iter_decode_eos_penalty=0.0, iter_decode_force_max_iter=False, iter_decode_max_iter=10, iter_decode_with_beam=1, iter_decode_with_external_reranker=False, left_pad_source='True', left_pad_target='False', lenpen=1, lm_path=None, lm_weight=0.0, load_alignments=False, localsgd_frequency=3, log_format=None, log_interval=100, lr_scheduler='fixed', lr_shrink=0.1, match_source_len=False, max_len_a=0, max_len_b=200, max_source_positions=1024, max_target_positions=1024, max_tokens=12000, max_tokens_valid=None, memory_efficient_bf16=False, memory_efficient_fp16=False, min_len=1, min_loss_scale=0.0001, model_overrides='{}', model_parallel_size=1, nbest=1, no_beamable_mm=False, no_early_stop=False, no_progress_bar=False, no_repeat_ngram_size=0, no_seed_provided=False, nprocs_per_node=1, num_batch_buckets=0, num_shards=1, num_workers=1, optimizer=None, path='checkpoints/kr-models/checkpoint_best.pt', pipeline_balance=None, pipeline_checkpoint='never', pipeline_chunks=0, pipeline_decoder_balance=None, pipeline_decoder_devices=None, pipeline_devices=None, pipeline_encoder_balance=None, pipeline_encoder_devices=None, pipeline_model_parallel=False, prefix_size=0, print_alignment=False, print_step=False, profile=False, quantization_config_path=None, quiet=False, remove_bpe=None, replace_unk=None, required_batch_size_multiple=8, required_seq_len_multiple=1, results_path=None, retain_dropout=False, retain_dropout_modules=None, retain_iter_history=False, sacrebleu=False, sampling=False, sampling_topk=-1, sampling_topp=-1.0, score_reference=False, scoring='bleu', seed=1, shard_id=0, skip_invalid_size_inputs_valid_test=False, slowmo_algorithm='LocalSGD', slowmo_momentum=None, source_lang='kr.input', target_lang='kr.output', task='translation', temperature=1.0, tensorboard_logdir=None, threshold_loss_scale=None, tokenizer=None, tpu=False, train_subset='train', truncate_source=False, unkpen=0, unnormalized=False, upsample_primary=1, user_dir=None, valid_subset='valid', validate_after_updates=0, validate_interval=1, validate_interval_updates=0, warmup_updates=0, zero_sharding='none')
+2023-04-08 16:01:31 | INFO | fairseq.tasks.translation | [kr.input] dictionary: 32 types
+2023-04-08 16:01:31 | INFO | fairseq.tasks.translation | [kr.output] dictionary: 32 types
+2023-04-08 16:01:31 | INFO | fairseq.data.data_utils | loaded 68 examples from: data-bin/kr/test.kr.input-kr.output.kr.input
+2023-04-08 16:01:31 | INFO | fairseq.data.data_utils | loaded 68 examples from: data-bin/kr/test.kr.input-kr.output.kr.output
+2023-04-08 16:01:31 | INFO | fairseq.tasks.translation | data-bin/kr test kr.input-kr.output 68 examples
+2023-04-08 16:01:31 | INFO | fairseq_cli.generate | loading model(s) from checkpoints/kr-models/checkpoint_best.pt
+S-21	k o m a p s x p n i t a
+T-21	k o m a S x m m i t a
+H-21	-0.027420027181506157	k o m a S x m n i t a
+D-21	-0.027420027181506157	k o m a S x m n i t a
+P-21	-0.0293 -0.0265 -0.0211 -0.0266 -0.0541 -0.0121 -0.0101 -0.0273 -0.0350 -0.0124 -0.0288 -0.0458
+S-24	c u k k e S n x n t e
+T-24	c u k g e n n x n t e
+H-24	-0.1264147162437439	c u k g e n x n t e
+D-24	-0.1264147162437439	c u k g e n x n t e
+P-24	-0.0312 -0.0271 -0.0454 -0.0250 -0.0540 -0.0904 -0.8805 -0.1352 -0.0160 -0.0424 -0.0432
+S-58	n x l k v S n e y o
+T-58	n x l k v n n e y o
+H-58	-0.3584754168987274	n x l k v n e
+D-58	-0.3584754168987274	n x l k v n e
+P-58	-0.0255 -0.0426 -0.0383 -0.0287 -0.1111 -1.1645 -1.2469 -0.2102
+S-3	k w i y v p k u n a
+T-3	k w i y v p g u n a
+H-3	-0.17178259789943695	k i y v p g u n a
+D-3	-0.17178259789943695	k i y v p g u n a
+P-3	-0.0319 -1.0533 -0.0155 -0.0217 -0.0220 -0.0271 -0.3799 -0.0233 -0.0567 -0.0863
+S-1	m i g x l v p k i n
+T-1	m i g x l v p g i n
+H-1	-0.13146613538265228	m i g x l v p g i n
+D-1	-0.13146613538265228	m i g x l v p g i n
+P-1	-0.0306 -0.0461 -0.0482 -0.0107 -0.0364 -0.0268 -0.0564 -0.0533 -0.0566 -0.0617 -1.0192
+S-28	c e m i S k u n a
+T-28	c e m i t g u n a
+H-28	-0.06673736870288849	c e m i t g u n a
+D-28	-0.06673736870288849	c e m i t g u n a
+P-28	-0.0219 -0.0372 -0.0088 -0.0202 -0.1754 -0.0172 -0.2350 -0.0154 -0.0820 -0.0543
+S-37	t a t k i n t a
+T-37	t a k g i n t a
+H-37	-0.2279398888349533	t a k g i n a
+D-37	-0.2279398888349533	t a k g i n a
+P-37	-0.0592 -0.0564 -0.0195 -0.0361 -0.0359 -0.5733 -0.9851 -0.0580
+S-7	u s k i k i t o
+T-7	u k g i k i t o
+H-7	-0.3985520899295807	u k g i k u t u
+D-7	-0.3985520899295807	u k g i k u t u
+P-7	-0.0424 -0.1380 -0.0391 -0.0378 -0.1904 -1.2938 -0.8185 -0.9691 -0.0578
+S-9	c o l l i p t a
+T-9	c o l l i p d a
+H-9	-0.10857856273651123	c o l l i p d a
+D-9	-0.10857856273651123	c o l l i p d a
+P-9	-0.0202 -0.0263 -0.0462 -0.5881 -0.0579 -0.0945 -0.0431 -0.0381 -0.0629
+S-23	t a l m a S n e
+T-23	t a l m a n n e
+H-23	-0.17969000339508057	t a l m a n t e
+D-23	-0.17969000339508057	t a l m a n t e
+P-23	-0.0621 -0.0570 -0.0362 -0.0137 -0.0399 -0.0832 -1.1558 -0.1239 -0.0454
+S-34	k w i y v p t a
+T-34	k w i y v p d a
+H-34	-0.14212128520011902	k w i y v p d a
+D-34	-0.14212128520011902	k w i y v p d a
+P-34	-0.0340 -1.0217 -0.0469 -0.0095 -0.0197 -0.0276 -0.0182 -0.0310 -0.0706
+S-41	m a c k e S c i
+T-41	m a k g e t J i
+H-41	-0.0953277051448822	m a t g e t J i
+D-41	-0.0953277051448822	m a t g e t J i
+P-41	-0.0202 -0.0266 -0.3857 -0.2258 -0.0303 -0.0304 -0.0339 -0.0558 -0.0493
+S-47	m v k t o l o k
+T-47	m v k d o l o k
+H-47	-0.24366921186447144	m v k t x l a k o
+D-47	-0.24366921186447144	m v k t x l a k o
+P-47	-0.0283 -0.0433 -0.1063 -0.3119 -0.4310 -0.0260 -1.3483 -0.0560 -0.0361 -0.0496
+S-60	c u k k e S v
+T-60	c u k k e S v
+H-60	-0.03103305958211422	c u k g e S v
+D-60	-0.03103305958211422	c u k g e S v
+P-60	-0.0285 -0.0231 -0.0408 -0.0234 -0.0351 -0.0112 -0.0186 -0.0677
+S-8	i l k . n x n
+T-8	i N . n x n
+H-8	-0.10948169231414795	i l k . n x n
+D-8	-0.10948169231414795	i l k . n x n
+P-8	-0.0390 -0.0482 -0.0497 -0.0483 -0.4644 -0.0225 -0.1497 -0.0540
+S-16	v l y v p t a
+T-16	v l y v p d a
+H-16	-0.04166704788804054	v l y v p d a
+D-16	-0.04166704788804054	v l y v p d a
+P-16	-0.0433 -0.0682 -0.0408 -0.0285 -0.0361 -0.0155 -0.0342 -0.0668
+S-36	m u k v p t a
+T-36	m u k v p d a
+H-36	-0.038193490356206894	m u k v p d a
+D-36	-0.038193490356206894	m u k v p d a
+P-36	-0.0232 -0.0476 -0.0257 -0.0453 -0.0330 -0.0186 -0.0391 -0.0731
+S-46	J a l p . k e
+T-46	J a l k . g e
+H-46	-0.035999689251184464	J a l p . g e
+D-46	-0.035999689251184464	J a l p . g e
+P-46	-0.0116 -0.0545 -0.0364 -0.0547 -0.0102 -0.0157 -0.0316 -0.0733
+S-50	v l y v p k e
+T-50	v l y v p g e
+H-50	-0.041498567909002304	v l y v p g e
+D-50	-0.041498567909002304	v l y v p g e
+P-50	-0.0383 -0.0547 -0.0246 -0.0456 -0.0495 -0.0199 -0.0276 -0.0718
+S-52	c e m i S c i
+T-52	c e m i t J i
+H-52	-0.029335591942071915	c e m i t J i
+D-52	-0.029335591942071915	c e m i t J i
+P-52	-0.0297 -0.0225 -0.0089 -0.0240 -0.0267 -0.0118 -0.0596 -0.0516
+S-55	m v k t a k a
+T-55	m v k d a k a
+H-55	-0.3106954097747803	m v k t d a
+D-55	-0.3106954097747803	m v k t d a
+P-55	-0.0224 -0.0646 -0.0429 -0.2394 -0.6124 -0.0428 -1.1504
+S-61	C a k a p c i
+T-61	C a k a p J i
+H-61	-0.06145738810300827	C a k a p J i
+D-61	-0.06145738810300827	C a k a p J i
+P-61	-0.0189 -0.0478 -0.0616 -0.1137 -0.0528 -0.0953 -0.0384 -0.0630
+S-64	k a T k i t o
+T-64	g a k g i t u
+H-64	-0.05986654385924339	k a k g i t u
+D-64	-0.05986654385924339	k a k g i t u
+P-64	-0.0436 -0.0363 -0.1333 -0.0427 -0.0444 -0.0344 -0.0768 -0.0673
+S-67	i S t v n t e
+T-67	i t d v n t e
+H-67	-0.0456182099878788	i t d x n t e
+D-67	-0.0456182099878788	i t d x n t e
+P-67	-0.0909 -0.0774 -0.0264 -0.0315 -0.0397 -0.0158 -0.0180 -0.0653
+S-65	t a l m x n
+T-65	t a l m x n
+H-65	-0.04519277811050415	t a l m x n
+D-65	-0.04519277811050415	t a l m x n
+P-65	-0.0658 -0.0718 -0.0355 -0.0209 -0.0181 -0.0436 -0.0607
+S-51	n v l p x n
+T-51	n v l p x n
+H-51	-0.03609998896718025	n v l p x n
+D-51	-0.03609998896718025	n v l p x n
+P-51	-0.0185 -0.0450 -0.0238 -0.0339 -0.0186 -0.0443 -0.0686
+S-27	k a T k i n
+T-27	k a k g i n
+H-27	-0.10897232592105865	k a k g i n
+D-27	-0.10897232592105865	k a k g i n
+P-27	-0.1190 -0.0433 -0.2575 -0.0364 -0.0397 -0.1147 -0.1522
+S-15	p v s k y v
+T-15	p v t g y v
+H-15	-0.2006993293762207	p v k g y v
+D-15	-0.2006993293762207	p v k g y v
+P-15	-0.0407 -0.0402 -1.1836 -0.0264 -0.0249 -0.0292 -0.0599
+S-4	p v s k y v
+T-4	p v k g y v
+H-4	-0.2006993293762207	p v k g y v
+D-4	-0.2006993293762207	p v k g y v
+P-4	-0.0407 -0.0402 -1.1836 -0.0264 -0.0249 -0.0292 -0.0599
+S-63	i l k . k o
+T-63	i l . g o
+H-63	-0.07140195369720459	i l k . g u
+D-63	-0.07140195369720459	i l k . g u
+P-63	-0.0569 -0.0336 -0.0640 -0.0250 -0.0215 -0.2334 -0.0655
+S-59	v p s c y o
+T-59	v p J y v
+H-59	-0.26725679636001587	v p J y o
+D-59	-0.26725679636001587	v p J y o
+P-59	-0.0586 -0.0291 -0.9273 -0.0548 -0.4790 -0.0548
+S-2	i l k . k o
+T-2	i l . g u
+H-2	-0.07140195369720459	i l k . g u
+D-2	-0.07140195369720459	i l k . g u
+P-2	-0.0569 -0.0336 -0.0640 -0.0250 -0.0215 -0.2334 -0.0655
+S-54	p a t k o
+T-54	p a k g o
+H-54	-0.07490748912096024	p a k g o
+D-54	-0.07490748912096024	p a k g o
+P-54	-0.0465 -0.0357 -0.1636 -0.0845 -0.0566 -0.0627
+S-66	n u p c i
+T-66	n u p J i
+H-66	-0.15171048045158386	n u p J i
+D-66	-0.15171048045158386	n u p J i
+P-66	-0.0323 -0.1256 -0.0396 -0.6089 -0.0354 -0.0685
+S-49	t a g c i
+T-49	d a k J i
+H-49	-0.19502533972263336	d a k J i
+D-49	-0.19502533972263336	d a k J i
+P-49	-0.7300 -0.1605 -0.1356 -0.0269 -0.0426 -0.0746
+S-11	k a c k o
+T-11	a g o
+H-11	-0.43025603890419006	k a k g o
+D-11	-0.43025603890419006	k a k g o
+P-11	-0.3079 -0.0285 -1.1886 -0.2817 -0.7144 -0.0603
+S-0	m v k k o
+T-0	m v g u
+H-0	-0.22039727866649628	m v k g o
+D-0	-0.22039727866649628	m v k g o
+P-0	-0.0212 -0.0414 -0.5890 -0.0538 -0.5627 -0.0543
+S-12	v p s k o
+T-12	v p g o
+H-12	-0.080379419028759	v p g u
+D-12	-0.080379419028759	v p g u
+P-12	-0.0419 -0.0415 -0.1847 -0.0701 -0.0636
+S-19	m v k k o
+T-19	m v g o
+H-19	-0.22039727866649628	m v k g o
+D-19	-0.22039727866649628	m v k g o
+P-19	-0.0212 -0.0414 -0.5890 -0.0538 -0.5627 -0.0543
+S-25	v p s t a
+T-25	v t d a
+H-25	-0.10221369564533234	v p d a
+D-25	-0.10221369564533234	v p d a
+P-25	-0.0340 -0.0309 -0.3356 -0.0447 -0.0659
+S-33	v p s t a
+T-33	v p t a
+H-33	-0.10221369564533234	v p d a
+D-33	-0.10221369564533234	v p d a
+P-33	-0.0340 -0.0309 -0.3356 -0.0447 -0.0659
+S-56	v p s c i
+T-56	v p J i
+H-56	-0.07064297795295715	v p C i
+D-56	-0.07064297795295715	v p C i
+P-56	-0.0360 -0.0277 -0.1923 -0.0499 -0.0473
+S-5	m a c t a
+T-5	m a t d a
+H-5	-0.14460575580596924	m a t T a
+D-5	-0.14460575580596924	m a t T a
+P-5	-0.0226 -0.0289 -0.0217 -0.6974 -0.0478 -0.0492
+S-13	c a k t a
+T-13	c a k d a
+H-13	-0.07043586671352386	c a k d a
+D-13	-0.07043586671352386	c a k d a
+P-13	-0.0594 -0.0471 -0.0975 -0.1114 -0.0460 -0.0612
+S-14	c a p c a
+T-14	c a p J a
+H-14	-0.05647968873381615	c a p J a
+D-14	-0.05647968873381615	c a p J a
+P-14	-0.0654 -0.0395 -0.0361 -0.0499 -0.0516 -0.0963
+S-17	s i P t a
+T-17	s i p d a
+H-17	-0.04912053421139717	s i p d a
+D-17	-0.04912053421139717	s i p d a
+P-17	-0.0360 -0.0568 -0.0179 -0.0421 -0.0598 -0.0821
+S-22	c a k t a
+T-22	J a k d a
+H-22	-0.07043586671352386	c a k d a
+D-22	-0.07043586671352386	c a k d a
+P-22	-0.0594 -0.0471 -0.0975 -0.1114 -0.0460 -0.0612
+S-26	s i P t a
+T-26	s i p t a
+H-26	-0.04912053421139717	s i p d a
+D-26	-0.04912053421139717	s i p d a
+P-26	-0.0360 -0.0568 -0.0179 -0.0421 -0.0598 -0.0821
+S-29	s i P k o
+T-29	s i p g o
+H-29	-0.10092351585626602	s i p g u
+D-29	-0.10092351585626602	s i p g u
+P-29	-0.0195 -0.0424 -0.0199 -0.0169 -0.4249 -0.0819
+S-30	t a g k o
+T-30	d a k g o
+H-30	-0.04883075878024101	t a k g o
+D-30	-0.04883075878024101	t a k g o
+P-30	-0.0401 -0.0476 -0.0784 -0.0304 -0.0312 -0.0653
+S-31	t x t k o
+T-31	t x k g o
+H-31	-0.05931026488542557	t x k g o
+D-31	-0.05931026488542557	t x k g o
+P-31	-0.0226 -0.0334 -0.0697 -0.0308 -0.1350 -0.0644
+S-32	n v l p v
+T-32	n v l p v
+H-32	-0.03430929034948349	n v l p v
+D-32	-0.03430929034948349	n v l p v
+P-32	-0.0235 -0.0305 -0.0227 -0.0316 -0.0308 -0.0668
+S-38	s i P c i
+T-38	s i p J i
+H-38	-0.040004681795835495	s i p J i
+D-38	-0.040004681795835495	s i p J i
+P-38	-0.0211 -0.0522 -0.0186 -0.0135 -0.0608 -0.0739
+S-40	m v k k o
+T-40	m v k g o
+H-40	-0.22039727866649628	m v k g o
+D-40	-0.22039727866649628	m v k g o
+P-40	-0.0212 -0.0414 -0.5890 -0.0538 -0.5627 -0.0543
+S-44	c a p k o
+T-44	c a p g o
+H-44	-0.19869394600391388	c a p g o
+D-44	-0.19869394600391388	c a p g o
+P-44	-0.0135 -0.0519 -0.3033 -0.0298 -0.7360 -0.0577
+S-45	k a T t a
+T-45	g a t d a
+H-45	-0.20152001082897186	k a t d a
+D-45	-0.20152001082897186	k a t d a
+P-45	-0.9764 -0.0556 -0.0445 -0.0159 -0.0553 -0.0615
+S-20	s i t k o
+T-20	s i l g o
+H-20	-0.158340722322464	s i l g u
+D-20	-0.158340722322464	s i l g u
+P-20	-0.0216 -0.0421 -0.6828 -0.0998 -0.0382 -0.0655
+S-10	i S k o
+T-10	i t g o
+H-10	-0.4343501925468445	i k g o
+D-10	-0.4343501925468445	i k g o
+P-10	-0.1018 -1.0431 -0.0291 -0.9221 -0.0756
+S-18	i p k o
+T-18	i k g u
+H-18	-0.3249034881591797	i p g o
+D-18	-0.3249034881591797	i p g o
+P-18	-0.9998 -0.0412 -0.0327 -0.4863 -0.0646
+S-6	i S t a
+T-6	n i t d a
+H-6	-0.4618965685367584	i t d a
+D-6	-0.4618965685367584	i t d a
+P-6	-0.6425 -0.7573 -0.1325 -0.6992 -0.0780
+S-35	i S t a
+T-35	s i t d a
+H-35	-0.4618965685367584	i t d a
+D-35	-0.4618965685367584	i t d a
+P-35	-0.6425 -0.7573 -0.1325 -0.6992 -0.0780
+S-43	i S t a
+T-43	m i t d a
+H-43	-0.4618965685367584	i t d a
+D-43	-0.4618965685367584	i t d a
+P-43	-0.6425 -0.7573 -0.1325 -0.6992 -0.0780
+S-48	i S k e
+T-48	s i k g e
+H-48	-0.3179241716861725	i k g e
+D-48	-0.3179241716861725	i k g e
+P-48	-0.3859 -1.0185 -0.0289 -0.0282 -0.1281
+S-53	i S k e
+T-53	t i k g e
+H-53	-0.3179241716861725	i k g e
+D-53	-0.3179241716861725	i k g e
+P-53	-0.3859 -1.0185 -0.0289 -0.0282 -0.1281
+S-62	i S k i
+T-62	n i k g i
+H-62	-0.1433168649673462	i k g i
+D-62	-0.1433168649673462	i k g i
+P-62	-0.1734 -0.3511 -0.0320 -0.0563 -0.1038
+S-57	i S k e
+T-57	m a s i g e
+H-57	-0.3179241716861725	i k g e
+D-57	-0.3179241716861725	i k g e
+P-57	-0.3859 -1.0185 -0.0289 -0.0282 -0.1281
+S-42	i S k e
+T-42	m a s i k g e
+H-42	-0.3179241716861725	i k g e
+D-42	-0.3179241716861725	i k g e
+P-42	-0.3859 -1.0185 -0.0289 -0.0282 -0.1281
+S-39	i l k v
+T-39	i k v
+H-39	-0.034947700798511505	i l k v
+D-39	-0.034947700798511505	i l k v
+P-39	-0.0443 -0.0312 -0.0249 -0.0158 -0.0586
+2023-04-08 16:01:33 | INFO | fairseq_cli.generate | NOTE: hypothesis and token scores are output in base 2
+2023-04-08 16:01:33 | INFO | fairseq_cli.generate | Translated 68 sentences (468 tokens) in 0.5s (129.44 sentences/s, 890.84 tokens/s)
+Generate test with beam=5: BLEU4 = 72.55, 89.8/78.9/69.3/61.7 (BP=0.978, ratio=0.978, syslen=400, reflen=409)
