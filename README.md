@@ -14,3 +14,9 @@
 ```
 pip install fairseq
 ```
+
+All other python libraries can be installed using:
+
+```
+pip install -r requirements.txt
+```
