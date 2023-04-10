@@ -4,8 +4,9 @@ from sklearn.model_selection import train_test_split
 
 if __name__ == "__main__":
 
-
-    data = pd.read_csv("/home/akhilesh/personal/sigmorphon2023/data/all_NIKL.csv").fillna("")
+    data = pd.read_csv(
+        "/home/akhilesh/personal/sigmorphon2023/data/all_NIKL.csv"
+    ).fillna("")
 
     morph_r = data["Morphology_R"].tolist()
 
@@ -24,13 +25,63 @@ if __name__ == "__main__":
         prod = " ".join(str(i) for i in prod)
         _output.append(prod)
 
-    with open("/home/akhilesh/personal/sigmorphon2023/data/neural/baseline/kr.input", "w+"):
+    with open(
+        "/home/akhilesh/personal/sigmorphon2023/data/neural/baseline/kr.input", "w+"
+    ) as f:
         for item in _input:
             f.write(item + "\n")
 
-    with open("/home/akhilesh/personal/sigmorphon2023/data/neural/baseline/kr.output", "w+"):
+    with open(
+        "/home/akhilesh/personal/sigmorphon2023/data/neural/baseline/kr.output", "w+"
+    ) as f:
         for item in _output:
             f.write(item + "\n")
 
-    X_train, X_test, y_train, y_test = train_test_split(_input, _output, test_size=0.2, random_state=42)
-    X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.125, random_state=1)
+    X_train, X_test, y_train, y_test = train_test_split(
+        _input, _output, test_size=0.2, random_state=42
+    )
+    X_train, X_val, y_train, y_val = train_test_split(
+        X_train, y_train, test_size=0.125, random_state=1
+    )
+
+    with open(
+        "/home/akhilesh/personal/sigmorphon2023/data/neural/baseline/train.kr.input",
+        "w+",
+    ) as f:
+        for item in X_train:
+            f.write(item + "\n")
+
+    with open(
+        "/home/akhilesh/personal/sigmorphon2023/data/neural/baseline/train.kr.output",
+        "w+",
+    ) as f:
+        for item in y_train:
+            f.write(item + "\n")
+
+    with open(
+        "/home/akhilesh/personal/sigmorphon2023/data/neural/baseline/valid.kr.input",
+        "w+",
+    ) as f:
+        for item in X_val:
+            f.write(item + "\n")
+
+    with open(
+        "/home/akhilesh/personal/sigmorphon2023/data/neural/baseline/valid.kr.output",
+        "w+",
+    ) as f:
+        for item in y_val:
+            f.write(item + "\n")
+
+    with open(
+        "/home/akhilesh/personal/sigmorphon2023/data/neural/baseline/test.kr.input",
+        "w+",
+    ) as f:
+        for item in X_test:
+            f.write(item + "\n")
+
+    with open(
+        "/home/akhilesh/personal/sigmorphon2023/data/neural/baseline/test.kr.output",
+        "w+",
+    ) as f:
+        for item in y_test:
+            f.write(item + "\n")

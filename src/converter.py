@@ -11,10 +11,12 @@ from docopt import docopt
 import pandas as pd
 import json
 
+
 def read_data(filename):
     data = pd.read_csv(filename)
 
     return data
+
 
 def roman2ipa(filename):
     data = pd.read_csv(filename)
@@ -27,6 +29,7 @@ def roman2ipa(filename):
 
     return data_dict
 
+
 def convert(col_lst, mapper):
     new_col_lst = []
     for item in col_lst:
@@ -34,7 +37,7 @@ def convert(col_lst, mapper):
         word = []
         for c in item:
             print(c)
-            if c == "-" or c == '.':
+            if c == "-" or c == ".":
                 word.append(c)
             else:
                 word.append(mapper[c])
@@ -43,11 +46,11 @@ def convert(col_lst, mapper):
 
     return new_col_lst
 
+
 if __name__ == "__main__":
     args = docopt(__doc__)
 
     filename = args["--filename"]
-
 
     ## reading the raw csv
     raw_data = read_data(filename)
@@ -79,4 +82,12 @@ if __name__ == "__main__":
     raw_data["IPA_UR"] = ipa_ur
     raw_data["IPA_SR"] = ipa_sr
 
-    raw_data.to_csv(filename.split('/')[0] + "/" + filename.split('/')[1] + "/" + "IPA_" + filename.split('/')[2], index=False)
+    raw_data.to_csv(
+        filename.split("/")[0]
+        + "/"
+        + filename.split("/")[1]
+        + "/"
+        + "IPA_"
+        + filename.split("/")[2],
+        index=False,
+    )
