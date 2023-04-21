@@ -1,0 +1,350 @@
+2023-04-10 16:30:54 | INFO | fairseq_cli.generate | Namespace(all_gather_list_size=16384, batch_size=None, batch_size_valid=None, beam=5, bf16=False, bpe=None, broadcast_buffers=False, bucket_cap_mb=25, checkpoint_shard_count=1, checkpoint_suffix='', constraints=None, cpu=False, criterion='cross_entropy', curriculum=0, data='data-bin/kr', data_buffer_size=10, dataset_impl=None, ddp_backend='c10d', decoding_format=None, device_id=0, disable_validation=False, distributed_backend='nccl', distributed_init_method=None, distributed_no_spawn=False, distributed_port=-1, distributed_rank=0, distributed_world_size=1, distributed_wrapper='DDP', diverse_beam_groups=-1, diverse_beam_strength=0.5, diversity_rate=-1.0, empty_cache_freq=0, eval_bleu=False, eval_bleu_args=None, eval_bleu_detok='space', eval_bleu_detok_args=None, eval_bleu_print_samples=False, eval_bleu_remove_bpe=None, eval_tokenized_bleu=False, fast_stat_sync=False, find_unused_parameters=False, fix_batches_to_gpus=False, fixed_validation_seed=None, force_anneal=None, fp16=False, fp16_init_scale=128, fp16_no_flatten_grads=False, fp16_scale_tolerance=0.0, fp16_scale_window=None, gen_subset='test', iter_decode_eos_penalty=0.0, iter_decode_force_max_iter=False, iter_decode_max_iter=10, iter_decode_with_beam=1, iter_decode_with_external_reranker=False, left_pad_source='True', left_pad_target='False', lenpen=1, lm_path=None, lm_weight=0.0, load_alignments=False, localsgd_frequency=3, log_format=None, log_interval=100, lr_scheduler='fixed', lr_shrink=0.1, match_source_len=False, max_len_a=0, max_len_b=200, max_source_positions=1024, max_target_positions=1024, max_tokens=12000, max_tokens_valid=None, memory_efficient_bf16=False, memory_efficient_fp16=False, min_len=1, min_loss_scale=0.0001, model_overrides='{}', model_parallel_size=1, nbest=1, no_beamable_mm=False, no_early_stop=False, no_progress_bar=False, no_repeat_ngram_size=0, no_seed_provided=False, nprocs_per_node=1, num_batch_buckets=0, num_shards=1, num_workers=1, optimizer=None, path='checkpoints/kr-models/checkpoint_best.pt', pipeline_balance=None, pipeline_checkpoint='never', pipeline_chunks=0, pipeline_decoder_balance=None, pipeline_decoder_devices=None, pipeline_devices=None, pipeline_encoder_balance=None, pipeline_encoder_devices=None, pipeline_model_parallel=False, prefix_size=0, print_alignment=False, print_step=False, profile=False, quantization_config_path=None, quiet=False, remove_bpe=None, replace_unk=None, required_batch_size_multiple=8, required_seq_len_multiple=1, results_path=None, retain_dropout=False, retain_dropout_modules=None, retain_iter_history=False, sacrebleu=False, sampling=False, sampling_topk=-1, sampling_topp=-1.0, score_reference=False, scoring='bleu', seed=1, shard_id=0, skip_invalid_size_inputs_valid_test=False, slowmo_algorithm='LocalSGD', slowmo_momentum=None, source_lang='kr.input', target_lang='kr.output', task='translation', temperature=1.0, tensorboard_logdir=None, threshold_loss_scale=None, tokenizer=None, tpu=False, train_subset='train', truncate_source=False, unkpen=0, unnormalized=False, upsample_primary=1, user_dir=None, valid_subset='valid', validate_after_updates=0, validate_interval=1, validate_interval_updates=0, warmup_updates=0, zero_sharding='none')
+2023-04-10 16:30:54 | INFO | fairseq.tasks.translation | [kr.input] dictionary: 32 types
+2023-04-10 16:30:54 | INFO | fairseq.tasks.translation | [kr.output] dictionary: 32 types
+2023-04-10 16:30:54 | INFO | fairseq.data.data_utils | loaded 68 examples from: data-bin/kr/test.kr.input-kr.output.kr.input
+2023-04-10 16:30:54 | INFO | fairseq.data.data_utils | loaded 68 examples from: data-bin/kr/test.kr.input-kr.output.kr.output
+2023-04-10 16:30:54 | INFO | fairseq.tasks.translation | data-bin/kr test kr.input-kr.output 68 examples
+2023-04-10 16:30:54 | INFO | fairseq_cli.generate | loading model(s) from checkpoints/kr-models/checkpoint_best.pt
+S-21	k o m a p - s x p n i t a
+T-21	k o m a S x m m i t a
+H-21	-0.03386014699935913	k o m a S x m n i t a
+D-21	-0.03386014699935913	k o m a S x m n i t a
+P-21	-0.0275 -0.0407 -0.0210 -0.0332 -0.0410 -0.0205 -0.0140 -0.0354 -0.0384 -0.0182 -0.0473 -0.0691
+S-24	c u k - k e S n x n t e
+T-24	c u k g e n n x n t e
+H-24	-0.5525953769683838	c u k g e n n x N
+D-24	-0.5525953769683838	c u k g e n n x N
+P-24	-0.0139 -0.0519 -0.0333 -0.0297 -0.0510 -0.0819 -0.5527 -0.1568 -4.4612 -0.0935
+S-58	n x l k - v S n e y o
+T-58	n x l k v n n e y o
+H-58	-0.4193207919597626	n x l k v t S v n
+D-58	-0.4193207919597626	n x l k v t S v n
+P-58	-0.0258 -0.0457 -0.0334 -0.0430 -0.0531 -0.3134 -0.4980 -0.3423 -0.1357 -2.7029
+S-3	k w i y v p - k u n a
+T-3	k w i y v p g u n a
+H-3	-0.21786396205425262	k i y v p g u n a
+D-3	-0.21786396205425262	k i y v p g u n a
+P-3	-0.0305 -1.4313 -0.0112 -0.0248 -0.0329 -0.0301 -0.1641 -0.0326 -0.3423 -0.0789
+S-1	m i g x l v p - k i n
+T-1	m i g x l v p g i n
+H-1	-0.09067296236753464	m i g x l v p g i n
+D-1	-0.09067296236753464	m i g x l v p g i n
+P-1	-0.0330 -0.0403 -0.0378 -0.0200 -0.0245 -0.0359 -0.0341 -0.0562 -0.0629 -0.0938 -0.5588
+S-28	c e m i S - k u n a
+T-28	c e m i t g u n a
+H-28	-0.05230110511183739	c e m i t g u n a
+D-28	-0.05230110511183739	c e m i t g u n a
+P-28	-0.0110 -0.0371 -0.0156 -0.0295 -0.0761 -0.0209 -0.1112 -0.0177 -0.1366 -0.0674
+S-37	t a t - k i n t a
+T-37	t a k g i n t a
+H-37	-0.16301526129245758	t a k g i t a n
+D-37	-0.16301526129245758	t a k g i t a n
+P-37	-0.0319 -0.0535 -0.0204 -0.0373 -0.0529 -1.0038 -0.1263 -0.0318 -0.1093
+S-7	u s - k i k i t o
+T-7	u k g i k i t o
+H-7	-0.12578769028186798	u k g i k u
+D-7	-0.12578769028186798	u k g i k u
+P-7	-0.0206 -0.0677 -0.0436 -0.0650 -0.1269 -0.4216 -0.1351
+S-9	c o l l i p - t a
+T-9	c o l l i p d a
+H-9	-0.11152689158916473	c o l i p d a
+D-9	-0.11152689158916473	c o l i p d a
+P-9	-0.0329 -0.0339 -0.0325 -0.5535 -0.0780 -0.0275 -0.0561 -0.0779
+S-23	t a l m - a S n e
+T-23	t a l m a n n e
+H-23	-0.06580483168363571	t a l m a n e
+D-23	-0.06580483168363571	t a l m a n e
+P-23	-0.0346 -0.0597 -0.0325 -0.0214 -0.0392 -0.0633 -0.1973 -0.0785
+S-34	k w i y v p - t a
+T-34	k w i y v p d a
+H-34	-0.15525378286838531	k w i y v p d a
+D-34	-0.15525378286838531	k w i y v p d a
+P-34	-0.0402 -1.0744 -0.0575 -0.0090 -0.0267 -0.0327 -0.0177 -0.0493 -0.0897
+S-41	m a c - k e S c i
+T-41	m a k g e t J i
+H-41	-0.058543313294649124	m a t g e t J i
+D-41	-0.058543313294649124	m a t g e t J i
+P-41	-0.0318 -0.0464 -0.1141 -0.1036 -0.0347 -0.0196 -0.0288 -0.0622 -0.0857
+S-47	m v k - t o l o k
+T-47	m v k d o l o k
+H-47	-0.3892248570919037	m v k t x l
+D-47	-0.3892248570919037	m v k t x l
+P-47	-0.0300 -0.0618 -0.1028 -0.4807 -0.1459 -0.0322 -1.8713
+S-60	c u k - k e S v
+T-60	c u k k e S v
+H-60	-0.03775552287697792	c u k g e S v
+D-60	-0.03775552287697792	c u k g e S v
+P-60	-0.0134 -0.0409 -0.0344 -0.0379 -0.0335 -0.0180 -0.0290 -0.0949
+S-16	v l y v p - t a
+T-16	v l y v p d a
+H-16	-0.042432770133018494	v l y v p d a
+D-16	-0.042432770133018494	v l y v p d a
+P-16	-0.0507 -0.0440 -0.0268 -0.0435 -0.0392 -0.0112 -0.0461 -0.0780
+S-36	m u k v p - t a
+T-36	m u k v p d a
+H-36	-0.050857532769441605	m u k v p d a
+D-36	-0.050857532769441605	m u k v p d a
+P-36	-0.0316 -0.0433 -0.0441 -0.0557 -0.0461 -0.0310 -0.0558 -0.0992
+S-50	v l y v p - k e
+T-50	v l y v p g e
+H-50	-0.04577295482158661	v l y v p g e
+D-50	-0.04577295482158661	v l y v p g e
+P-50	-0.0550 -0.0393 -0.0184 -0.0501 -0.0423 -0.0380 -0.0455 -0.0777
+S-52	c e m i S - c i
+T-52	c e m i t J i
+H-52	-0.034006498754024506	c e m i t J i
+D-52	-0.034006498754024506	c e m i t J i
+P-52	-0.0131 -0.0315 -0.0197 -0.0329 -0.0239 -0.0165 -0.0621 -0.0724
+S-55	m v k - t a k a
+T-55	m v k d a k a
+H-55	-0.35628077387809753	m v k t d a
+D-55	-0.35628077387809753	m v k t d a
+P-55	-0.0317 -0.0503 -0.0484 -0.3783 -0.7546 -0.0506 -1.1802
+S-61	C a k a p - c i
+T-61	C a k a p J i
+H-61	-0.08578185737133026	C a k a p J i
+D-61	-0.08578185737133026	C a k a p J i
+P-61	-0.0158 -0.0650 -0.0457 -0.0990 -0.0569 -0.2672 -0.0587 -0.0781
+S-64	k a T - k i t o
+T-64	g a k g i t u
+H-64	-0.07026799768209457	k a k g i t u
+D-64	-0.07026799768209457	k a k g i t u
+P-64	-0.0665 -0.0489 -0.1491 -0.0546 -0.0676 -0.0317 -0.0527 -0.0909
+S-67	i S - t v n t e
+T-67	i t d v n t e
+H-67	-0.04281774163246155	i t d x n t e
+D-67	-0.04281774163246155	i t d x n t e
+P-67	-0.0532 -0.0703 -0.0230 -0.0542 -0.0311 -0.0189 -0.0155 -0.0765
+S-65	t a l m - x n
+T-65	t a l m x n
+H-65	-0.04052656516432762	t a l m x n
+D-65	-0.04052656516432762	t a l m x n
+P-65	-0.0217 -0.0728 -0.0364 -0.0241 -0.0201 -0.0457 -0.0629
+S-51	n v l p - x n
+T-51	n v l p x n
+H-51	-0.03898525983095169	n v l p x n
+D-51	-0.03898525983095169	n v l p x n
+P-51	-0.0235 -0.0573 -0.0259 -0.0392 -0.0181 -0.0429 -0.0660
+S-46	J a l p - k e
+T-46	J a l k g e
+H-46	-0.04331284016370773	J a l p g e
+D-46	-0.04331284016370773	J a l p g e
+P-46	-0.0180 -0.0523 -0.0258 -0.0577 -0.0304 -0.0386 -0.0803
+S-27	k a T - k i n
+T-27	k a k g i n
+H-27	-0.1101979911327362	k a k g i n
+D-27	-0.1101979911327362	k a k g i n
+P-27	-0.1808 -0.0582 -0.2540 -0.0356 -0.0464 -0.1145 -0.0819
+S-15	p v s - k y v
+T-15	p v t g y v
+H-15	-0.12411165237426758	p v g y v
+D-15	-0.12411165237426758	p v g y v
+P-15	-0.0312 -0.0592 -0.5157 -0.0177 -0.0459 -0.0750
+S-4	p v s - k y v
+T-4	p v k g y v
+H-4	-0.12411165237426758	p v g y v
+D-4	-0.12411165237426758	p v g y v
+P-4	-0.0312 -0.0592 -0.5157 -0.0177 -0.0459 -0.0750
+S-59	v p s - c y o
+T-59	v p J y v
+H-59	-0.2605632543563843	v p J y o
+D-59	-0.2605632543563843	v p J y o
+P-59	-0.0580 -0.0363 -0.5509 -0.0376 -0.8154 -0.0652
+S-8	i l k - n x n
+T-8	i N n x n
+H-8	-0.0650487169623375	i l k x n
+D-8	-0.0650487169623375	i l k x n
+P-8	-0.0367 -0.0635 -0.0746 -0.0506 -0.1046 -0.0603
+S-45	k a T - t a
+T-45	g a t d a
+H-45	-0.23743793368339539	k a t d a
+D-45	-0.23743793368339539	k a t d a
+P-45	-1.1641 -0.0602 -0.0278 -0.0278 -0.0763 -0.0684
+S-66	n u p - c i
+T-66	n u p J i
+H-66	-0.1275203377008438	n u p J i
+D-66	-0.1275203377008438	n u p J i
+P-66	-0.0334 -0.1851 -0.0400 -0.3937 -0.0438 -0.0691
+S-54	p a t - k o
+T-54	p a k g o
+H-54	-0.06797923147678375	p a k g o
+D-54	-0.06797923147678375	p a k g o
+P-54	-0.0376 -0.0478 -0.1070 -0.0730 -0.0651 -0.0775
+S-49	t a g - c i
+T-49	d a k J i
+H-49	-0.19583359360694885	t a k J i
+D-49	-0.19583359360694885	t a k J i
+P-49	-0.8838 -0.0521 -0.0836 -0.0249 -0.0548 -0.0757
+S-44	c a p - k o
+T-44	c a p g o
+H-44	-0.2500154972076416	c a p g o
+D-44	-0.2500154972076416	c a p g o
+P-44	-0.0116 -0.0589 -0.3512 -0.0319 -0.9774 -0.0691
+S-11	k a c - k o
+T-11	a g o
+H-11	-0.47286471724510193	k a g u
+D-11	-0.47286471724510193	k a g u
+P-11	-0.2230 -0.0491 -1.1918 -0.8283 -0.0720
+S-0	m v k - k o
+T-0	m v g u
+H-0	-0.32422003149986267	m v k g o
+D-0	-0.32422003149986267	m v k g o
+P-0	-0.0303 -0.0663 -0.7350 -0.0494 -0.9879 -0.0765
+S-2	i l k - k o
+T-2	i l g u
+H-2	-0.07830120623111725	i l k g u
+D-2	-0.07830120623111725	i l k g u
+P-2	-0.0689 -0.0319 -0.0944 -0.1156 -0.0825 -0.0764
+S-12	v p s - k o
+T-12	v p g o
+H-12	-0.09254121780395508	v p g u
+D-12	-0.09254121780395508	v p g u
+P-12	-0.0422 -0.0398 -0.2607 -0.0492 -0.0708
+S-19	m v k - k o
+T-19	m v g o
+H-19	-0.32422003149986267	m v k g o
+D-19	-0.32422003149986267	m v k g o
+P-19	-0.0303 -0.0663 -0.7350 -0.0494 -0.9879 -0.0765
+S-25	v p s - t a
+T-25	v t d a
+H-25	-0.1321604698896408	v p d a
+D-25	-0.1321604698896408	v p d a
+P-25	-0.0367 -0.0341 -0.4588 -0.0596 -0.0716
+S-33	v p s - t a
+T-33	v p t a
+H-33	-0.1321604698896408	v p d a
+D-33	-0.1321604698896408	v p d a
+P-33	-0.0367 -0.0341 -0.4588 -0.0596 -0.0716
+S-56	v p s - c i
+T-56	v p J i
+H-56	-0.055347274988889694	v p C i
+D-56	-0.055347274988889694	v p C i
+P-56	-0.0378 -0.0321 -0.0833 -0.0549 -0.0687
+S-63	i l k - k o
+T-63	i l g o
+H-63	-0.07830120623111725	i l k g u
+D-63	-0.07830120623111725	i l k g u
+P-63	-0.0689 -0.0319 -0.0944 -0.1156 -0.0825 -0.0764
+S-5	m a c - t a
+T-5	m a t d a
+H-5	-0.09519180655479431	m a t T a
+D-5	-0.09519180655479431	m a t T a
+P-5	-0.0363 -0.0425 -0.0248 -0.3322 -0.0675 -0.0680
+S-13	c a k - t a
+T-13	c a k d a
+H-13	-0.0908273383975029	c a k d a
+D-13	-0.0908273383975029	c a k d a
+P-13	-0.0578 -0.0504 -0.2344 -0.0766 -0.0561 -0.0697
+S-17	s i P - t a
+T-17	s i p d a
+H-17	-0.056297898292541504	s i p d a
+D-17	-0.056297898292541504	s i p d a
+P-17	-0.0328 -0.0681 -0.0329 -0.0526 -0.0694 -0.0819
+S-20	s i t - k o
+T-20	s i l g o
+H-20	-0.14825503528118134	s i l g u
+D-20	-0.14825503528118134	s i l g u
+P-20	-0.0213 -0.0467 -0.6460 -0.0847 -0.0221 -0.0687
+S-22	c a k - t a
+T-22	J a k d a
+H-22	-0.0908273383975029	c a k d a
+D-22	-0.0908273383975029	c a k d a
+P-22	-0.0578 -0.0504 -0.2344 -0.0766 -0.0561 -0.0697
+S-26	s i P - t a
+T-26	s i p t a
+H-26	-0.056297898292541504	s i p d a
+D-26	-0.056297898292541504	s i p d a
+P-26	-0.0328 -0.0681 -0.0329 -0.0526 -0.0694 -0.0819
+S-29	s i P - k o
+T-29	s i p g o
+H-29	-0.1253083497285843	s i p g u
+D-29	-0.1253083497285843	s i p g u
+P-29	-0.0176 -0.0368 -0.0383 -0.0276 -0.5477 -0.0839
+S-30	t a g - k o
+T-30	d a k g o
+H-30	-0.04535149037837982	t a k g o
+D-30	-0.04535149037837982	t a k g o
+P-30	-0.0341 -0.0504 -0.0406 -0.0353 -0.0384 -0.0734
+S-31	t x t - k o
+T-31	t x k g o
+H-31	-0.0906083732843399	t x k g o
+D-31	-0.0906083732843399	t x k g o
+P-31	-0.0203 -0.0416 -0.0486 -0.0291 -0.3336 -0.0705
+S-32	n v l p - v
+T-32	n v l p v
+H-32	-0.045116472989320755	n v l p v
+D-32	-0.045116472989320755	n v l p v
+P-32	-0.0326 -0.0482 -0.0251 -0.0494 -0.0448 -0.0707
+S-38	s i P - c i
+T-38	s i p J i
+H-38	-0.04288196936249733	s i p J i
+D-38	-0.04288196936249733	s i p J i
+P-38	-0.0234 -0.0410 -0.0297 -0.0256 -0.0642 -0.0734
+S-40	m v k - k o
+T-40	m v k g o
+H-40	-0.32422003149986267	m v k g o
+D-40	-0.32422003149986267	m v k g o
+P-40	-0.0303 -0.0663 -0.7350 -0.0494 -0.9879 -0.0765
+S-14	c a p - c a
+T-14	c a p J a
+H-14	-0.06918960809707642	c a p J a
+D-14	-0.06918960809707642	c a p J a
+P-14	-0.0529 -0.0540 -0.0515 -0.1113 -0.0659 -0.0795
+S-10	i S - k o
+T-10	i t g o
+H-10	-0.4922160506248474	i k g o
+D-10	-0.4922160506248474	i k g o
+P-10	-0.1065 -1.2262 -0.0367 -1.0034 -0.0882
+S-18	i p - k o
+T-18	i k g u
+H-18	-0.3626924455165863	i p g o
+D-18	-0.3626924455165863	i p g o
+P-18	-1.0278 -0.0405 -0.0471 -0.6211 -0.0770
+S-6	i S - t a
+T-6	n i t d a
+H-6	-0.5198348164558411	i t d a
+D-6	-0.5198348164558411	i t d a
+P-6	-0.7562 -0.7197 -0.1830 -0.8544 -0.0859
+S-35	i S - t a
+T-35	s i t d a
+H-35	-0.5198348164558411	i t d a
+D-35	-0.5198348164558411	i t d a
+P-35	-0.7562 -0.7197 -0.1830 -0.8544 -0.0859
+S-43	i S - t a
+T-43	m i t d a
+H-43	-0.5198348164558411	i t d a
+D-43	-0.5198348164558411	i t d a
+P-43	-0.7562 -0.7197 -0.1830 -0.8544 -0.0859
+S-48	i S - k e
+T-48	s i k g e
+H-48	-0.22640427947044373	i k g e
+D-48	-0.22640427947044373	i k g e
+P-48	-0.1718 -0.7388 -0.0395 -0.0356 -0.1464
+S-53	i S - k e
+T-53	t i k g e
+H-53	-0.22640427947044373	i k g e
+D-53	-0.22640427947044373	i k g e
+P-53	-0.1718 -0.7388 -0.0395 -0.0356 -0.1464
+S-62	i S - k i
+T-62	n i k g i
+H-62	-0.12400703877210617	i k g i
+D-62	-0.12400703877210617	i k g i
+P-62	-0.1833 -0.2453 -0.0426 -0.0599 -0.0890
+S-57	i S - k e
+T-57	m a s i g e
+H-57	-0.22640427947044373	i k g e
+D-57	-0.22640427947044373	i k g e
+P-57	-0.1718 -0.7388 -0.0395 -0.0356 -0.1464
+S-42	i S - k e
+T-42	m a s i k g e
+H-42	-0.22640427947044373	i k g e
+D-42	-0.22640427947044373	i k g e
+P-42	-0.1718 -0.7388 -0.0395 -0.0356 -0.1464
+S-39	i l k - v
+T-39	i k v
+H-39	-0.04394659027457237	i l k v
+D-39	-0.04394659027457237	i l k v
+P-39	-0.0523 -0.0378 -0.0328 -0.0318 -0.0650
+2023-04-10 16:30:55 | INFO | fairseq_cli.generate | NOTE: hypothesis and token scores are output in base 2
+2023-04-10 16:30:55 | INFO | fairseq_cli.generate | Translated 68 sentences (455 tokens) in 0.4s (154.73 sentences/s, 1035.32 tokens/s)
+Generate test with beam=5: BLEU4 = 69.94, 89.1/78.7/67.7/60.7 (BP=0.955, ratio=0.956, syslen=387, reflen=405)

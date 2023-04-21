@@ -1,0 +1,1 @@
+Accuracy for kr test set: 30.9%
