@@ -1,180 +1,180 @@
-kalka
-kalkna
-kalda
-kvpda
-kvmna
-kvPv
-kjvlmna
-kjvlpda
-kjvlpv
-kulkv
-kuNna
-kulda
-kxlkda
-kxNna
-kxlkv
-kxlPda
-kxlmna
-kxlPv
-naNna
-nalka
-nalkda
-nalpda
-nalmna
-nalpa
-neTv
-netda
-nenna
-nvlda
-nvlpna
-nvlpv
-nukv
-nukda
-nuNna
-nxNna
-nxkda
-nxlkv
-tvlpda
-tvlmna
-tvlpv
-tokda
-toka
-toNna
-tupv
-tupda
-tumna
-txkda
-txNna
-txlkv
-dvlpna
-dvlpda
-dvlpv
-maka
-makda
-maNna
-malna
-malka
-malda
-mvNna
-mvlda
-mvlkv
-mukda
-mukv
-muNna
-mulda
-muNna
-mulkv
-paNna
-pakda
-paka
-palka
-paNna
-palda
-palpda
-palmna
-palpa
-penna
-peTv
-petda
-pvpv
-pvmna
-pvpda
-pukna
-pulkv
-pulda
-pulda
-pulna
-pulTv
-bopa
-bomna
-bopda
-sokda
-soka
-soNna
-sulkv
-suNna
-sulkda
-sikda
-sikv
-siNna
-Svkda
-SvNna
-Svkv
-Sipv
-Simna
-Sipda
-alka
-alkda
-alkna
-yalmna
-yalpa
-yalpda
-yaTa
-yanna
-yatda
-vNna
-vlkda
-vlkv
-vmna
-vpv
-vpda
-vmna
-vpda
-vPv
-yvlpda
-yvlpna
-yvlpv
-yvnna
-yvtda
-yvTv
-upda
-umna
-upv
-xlPda
-xPna
-xlPv
-iNna
-ikda
-ikv
-ikda
-iNna
-ilkv
-ipda
-ipv
-imna
-caNna
-cakda
-caka
-cvkv
-cvkda
-cvNna
-cvmna
-cvpda
-cvpv
-ciNna
-cikda
-cikv
-cilkv
-ciNna
-cilda
-cipv
-cimna
-cipda
-Jalda
-Jalpa
-Jalmna
-Jikda
-Jikv
-JiNna
-Cakda
-CaNna
-Caka
-Tomna
-Topa
-Topda
-halda
-halna
-halTa
-hulna
-hulTv
-hulda
+k a l k a
+k a l k n a
+k a l d a
+k v p d a
+k v m n a
+k v p v
+k y v l m n a
+k y v l p d a
+k y v l p v
+k u l k v
+k u N n a
+k u l d a
+k x l k d a
+k x N n a
+k x l k v
+k x l p d a
+k x l m n a
+k x l p v
+n a N n a
+n a l k a
+n a l k d a
+n a l p d a
+n a l m n a
+n a l p a
+n e T v
+n e t d a
+n e n n a
+n v l d a
+n v l p n a
+n v l p v
+n u k v
+n u k d a
+n u N n a
+n x N n a
+n x k d a
+n x l k v
+t v l p d a
+t v l m n a
+t v l p v
+t o k d a
+t o k a
+t o N n a
+t u p v
+t u p d a
+t u m n a
+t x k d a
+t x N n a
+t x l k v
+d v l p n a
+d v l p d a
+d v l p v
+m a k a
+m a k d a
+m a N n a
+m a l n a
+m a l k a
+m a l d a
+m v N n a
+m v l d a
+m v l k v
+m u k d a
+m u k v
+m u N n a
+m u l d a
+m u N n a
+m u l k v
+p a N n a
+p a k d a
+p a k a
+p a l k a
+p a N n a
+p a l d a
+p a l p d a
+p a l m n a
+p a l p a
+p e n n a
+p e T v
+p e t d a
+p v p v
+p v m n a
+p v p d a
+p u k n a
+p u l k v
+p u l d a
+p u l d a
+p u l n a
+p u l T v
+b o p a
+b o m n a
+b o p d a
+s o k d a
+s o k a
+s o N n a
+s u l k v
+s u N n a
+s u l k d a
+s i k d a
+s i k v
+s i N n a
+S v k d a
+S v N n a
+S v k v
+S i p v
+S i m n a
+S i p d a
+a l k a
+a l k d a
+a l k n a
+y a l m n a
+y a l p a
+y a l p d a
+y a T a
+y a n n a
+y a t d a
+v N n a
+v l k d a
+v l k v
+v m n a
+v p v
+v p d a
+v m n a
+v p d a
+v p v
+j v l p d a
+j v l p n a
+j v l p v
+j v n n a
+j v t d a
+j v T v
+u p d a
+u m n a
+u p v
+x l p d a
+x p n a
+x l p v
+i N n a
+i k d a
+i k v
+i k d a
+i N n a
+i l k v
+i p d a
+i p v
+i m n a
+c a N n a
+c a k d a
+c a k a
+c v k v
+c v k d a
+c v N n a
+c v m n a
+c v p d a
+c v p v
+c i N n a
+c i k d a
+c i k v
+c i l k v
+c i N n a
+c i l d a
+c i p v
+c i m n a
+c i p d a
+J a l d a
+J a l p a
+J a l m n a
+J i k d a
+J i k v
+J i N n a
+C a k d a
+C a N n a
+C a k a
+T o m n a
+T o p a
+T o p d a
+h a l d a
+h a l n a
+h a l T a
+h u l n a
+h u l T v
+h u l d a
