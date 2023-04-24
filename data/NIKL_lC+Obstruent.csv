@@ -1,4 +1,4 @@
-﻿Morphology_R,Morphology_H,Production_H,Production_R,UR,SR,simplify_delete_obstruent,simplify_delete_lateral,nasalize,lateralize,tensify,Type
+Morphology_R,Morphology_H,Production_H,Production_R,UR,SR,simplify_delete_obstruent,simplify_delete_lateral,nasalize,lateralize,tensify,Type
 kulk-ke,굵게,굴께,kul.ge,lk-k,lg,1,0,NA,NA,1,lC+Obstruen
 kulk-ke,굵게,굴께,kul.ge,lk-k,lg,1,0,NA,NA,1,lC+Obstruen
 kulk-ke,굵게,굴께,kul.ge,lk-k,lg,1,0,NA,NA,1,lC+Obstruen
@@ -385,9 +385,9 @@ Jalp-tamyvn,짧다면,짤따면,Jal.da.myvn,lp-t,ld,1,0,NA,NA,1,lC+Obstruen
 Jalp-txn,짧든,짤뜬,Jal.dxn,lp-t,ld,1,0,NA,NA,1,lC+Obstruen
 Jalp-canha,짧잖아,짤짜나,Jal.Ja.na,lp-c,lJ,1,0,NA,NA,1,lC+Obstruen
 Jalp-canhayo,짧잖아요,짤짜나요,Jal.Ja.na.yo,lp-c,lJ,1,0,NA,NA,1,lC+Obstruen
-Jalpci,짧지,짤찌,Jal.Ji,lp-t,ld,1,0,NA,NA,1,lC+Obstruen
+Jalp-ci,짧지,짤찌,Jal.Ji,lp-t,ld,1,0,NA,NA,1,lC+Obstruen
 Jalp-ciman,짧지만,짤찌만,Jal.Ji.man,lp-c,lJ,1,0,NA,NA,1,lC+Obstruen
-Jalpcimanxn,짧지만은,짤찌마는,Jal.Ji.ma.nxn,lp-t,ld,1,0,NA,NA,1,lC+Obstruen
+Jalp-cimanxn,짧지만은,짤찌마는,Jal.Ji.ma.nxn,lp-t,ld,1,0,NA,NA,1,lC+Obstruen
 Jalp-ciman,짧지만,짤찌만,Jal.Ji.man,lp-c,lJ,1,0,NA,NA,1,lC+Obstruen
 Jalp-ciman,짧지만,짤찌만,Jal.Ji.man,lp-c,lJ,1,0,NA,NA,1,lC+Obstruen
 Jalp-ke,짧게,짧게,Jalp.ke,lp-k,lpk,0,0,NA,NA,0,lC+Obstruen
@@ -464,7 +464,7 @@ palp-ko,밟고,박꼬,pak.go,lp-k,kg,0,1,NA,NA,1,lC+Obstruen
 nvlp-tan,넓단,넓딴,nvlp.dan,lp-t,lpd,0,0,NA,NA,1,lC+Obstruen
 kulm-ko,굶고,굶꼬,kulm.go,lm-k,lmg,0,0,NA,NA,1,lC+Obstruen
 palp-ko,밟고,밟꼬,palp.go,lp-k,lpg,0,0,NA,NA,1,lC+Obstruen
-nvlpkito,넓기도,넑끼도,nvlk.gi.to,lk-g,lkg,0,0,NA,NA,1,lC+Obstruen
+nvlp-kito,넓기도,넑끼도,nvlk.gi.to,lk-g,lkg,0,0,NA,NA,1,lC+Obstruen
 palk-ko,밝고,밝꼬,palk.go,lk-k,lkg,0,0,NA,NA,1,lC+Obstruen
 palk-tvla,밝더라,발떠라,pal.dv.la,lk-t,ld,1,0,NA,NA,1,lC+Obstruen
 nvlp-ko,넓고,넓꼬,nvlp.go,lp-k,lpg,0,0,NA,NA,1,lC+Obstruen
@@ -665,7 +665,7 @@ nxlk-ko,늙고,늘꼬,nxl.go,lk-k,lg,1,0,NA,NA,1,lC+Obstruen
 nxlk-ko,늙고,늘꼬,nxl.go,lk-k,lg,1,0,NA,NA,1,lC+Obstruen
 nxlk-ki,늙기,늙끼,nxlk.gi,lk-k,lkg,0,0,NA,NA,1,lC+Obstruen
 nxlk-canhayo,늙잖아요,늘짜나요,nxl.Ja.na.yo,lk-c,lJ,1,0,NA,NA,1,lC+Obstruen
-nvlpkito,넓기도,넓끼도,nvlp.gi.to,lk-g,lpg,0,0,NA,NA,1,lC+Obstruen
+nvlp-kito,넓기도,넓끼도,nvlp.gi.to,lk-g,lpg,0,0,NA,NA,1,lC+Obstruen
 Jalp-kelanxn,짧게라는,짤께라는,Jal.ge.la.nxn,lp-k,lg,1,0,NA,NA,1,lC+Obstruen
 cvlm-ko,젊고,점꼬,cvm.go,lm-k,mg,0,1,NA,NA,1,lC+Obstruen
 Jalp-ke,짧게,짧께,Jalp.ge,lp-k,lpg,0,0,NA,NA,1,lC+Obstruen

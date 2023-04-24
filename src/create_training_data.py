@@ -5,8 +5,12 @@ from sklearn.model_selection import train_test_split
 if __name__ == "__main__":
 
     data = pd.read_csv(
-        "/home/akhilesh/personal/sigmorphon2023/data/all_NIKL.csv"
+        "/home/akhilesh/personal/sigmorphon2023/data/all_NIKL_and_ko.csv"
     ).fillna("")
+
+    # input_mapping = {"*p": "P", "*t": "T", "S": "*s"}
+    # output_mapping = {"*p": "b", "*t": "d", "*k": "g", "S": "*s", "*c": "J"}
+
 
     morph_r = data["Morphology_R"].tolist()
 
@@ -19,6 +23,20 @@ if __name__ == "__main__":
     _input = []
     _output = []
 
+    # new_morph_r = []
+    # for item in morph_r:
+    #     for k, v in input_mapping.items():
+    #         if k in item:
+    #             item = item.replace(k,v)
+    #         new_morph_r.append(item)
+
+    # new_prod_r = []
+    # for item in prod_r:
+    #     for k, v in output_mapping.items():
+    #         if k in item:
+    #             item = item.replace(k,v)
+    #         new_prod_r.append(item)
+
     for morph, prod in zip(morph_r, prod_r):
         morph = " ".join(str(item) for item in morph)
         _input.append(morph)
@@ -26,13 +44,13 @@ if __name__ == "__main__":
         _output.append(prod)
 
     with open(
-        "/home/akhilesh/personal/sigmorphon2023/data/neural/baseline/kr.input", "w+"
+        "/home/akhilesh/personal/sigmorphon2023/data/nikl_training/train.kr.input", "w+"
     ) as f:
         for item in _input:
             f.write(item + "\n")
 
     with open(
-        "/home/akhilesh/personal/sigmorphon2023/data/neural/baseline/kr.output", "w+"
+        "/home/akhilesh/personal/sigmorphon2023/data/nikl_training/train.kr.output", "w+"
     ) as f:
         for item in _output:
             f.write(item + "\n")
