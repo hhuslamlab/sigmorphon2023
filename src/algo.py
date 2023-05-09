@@ -3,12 +3,18 @@ import json
 
 if __name__ == "__main__":
 
-    data = pd.read_csv("../data/NIKL_lC+Vowel.csv").fillna("")
+    data = pd.read_csv("../data/train.csv").fillna("")
 
-    words = data["Morphology_R"].tolist()
+    words = data["Word_romanization"].tolist()
+    stems = data["Stem_romanization"].tolist()
+
     # affix_romanization = data["Affix_romanization"].tolist()
 
     # stem_types = data["StemType"].tolist()
+
+    simple_coda = data[data["StemType"] == "C"]
+
+    complex_coda = data[data["StemType"] == "C"]
 
     # affix_initial_segments = data["AffixInitialSegment"].tolist()
 
@@ -20,7 +26,7 @@ if __name__ == "__main__":
 
     # for word, affix, stem_type, affix_initial_segment in zip(words, affix_romanization, stem_types, affix_initial_segments):
 
-    for word in words:
+    for stem, word in zip(stems, words):
         all_cs = []
         all_pot = []
         all_vowels = []
@@ -48,7 +54,7 @@ if __name__ == "__main__":
         ## vowels
         condition11 = {"pot": 0, "cs": 0, "tensification": 0, "lateralization": 0}
 
-        custom_lst.append(condition11)
+        # custom_lst.append(condition11)
 
         # if stem_type == "lC":
         #     if affix_initial_segment == "Obstruent":
@@ -57,18 +63,18 @@ if __name__ == "__main__":
         # custom_lst.append(pot)
         ## obstruent
 
-#         custom_lst.append(condition1)
-#         custom_lst.append(condition2)
-#         custom_lst.append(condition3)
-#         custom_lst.append(condition4)
-#         custom_lst.append(condition5)
+        custom_lst.append(condition1)
+        custom_lst.append(condition2)
+        custom_lst.append(condition3)
+        custom_lst.append(condition4)
+        custom_lst.append(condition5)
 
         ## sonorant
         # custom_lst.append(condition6)
         # custom_lst.append(condition7)
         # custom_lst.append(condition8)
         # custom_lst.append(condition9)
-        # # print("POT or CS, affix: ", affix, ", word: ", word)
+        # # # print("POT or CS, affix: ", affix, ", word: ", word)
             # if affix_initial_segment == "Sonorant":
             #     custom_lst.append(cs)
             #     # print("CS, affix: ", affix, " word: ", word)
@@ -80,9 +86,13 @@ if __name__ == "__main__":
         # if stem_type == "C":
             # # print("POT, affix: ", affix, ", word: ", word)
             # custom_lst.append(pot)
+        custom_dict["word"] = word
+        custom_dict["stem"] = stem
+        custom_dict["conditions"] = custom_lst
         custom_dict[word] = custom_lst
+
         final_lst.append(custom_dict)
 
 
-with open("output_nikl_vowel.json", "w+") as f:
+with open("output_dev_obstruent.json", "w+") as f:
     json.dump(final_lst, f)

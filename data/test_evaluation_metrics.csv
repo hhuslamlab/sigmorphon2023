@@ -1,0 +1,6 @@
+,Precision,Recall,F1_score
+simplify_delete_obstruent,0.69,0.7,0.67
+simplify_delete_lateral,0.79,0.75,0.75
+nasalization,0.79,0.75,0.75
+lateralization,0.44,0.53,0.41
+tensification,0.98,0.98,0.98

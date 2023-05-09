@@ -8,7 +8,9 @@ if __name__ == "__main__":
     all_files = [
             path + "NIKL_lC+Obstruent.csv",
             path + "NIKL_lC+Sonorant.csv",
-            path + "Ko_complete.csv"
+            path + "NIKL_lC+Vowel.csv",
+            path + "train.csv",
+            path + "dev.csv"
     ]
     # for filename in os.listdir(path):
     #     if filename.startswith("NIKL"):
@@ -23,5 +25,5 @@ if __name__ == "__main__":
     frame = pd.concat(li, axis=0, ignore_index=True).fillna("")
 
     frame.to_csv(
-        "/home/akhilesh/personal/sigmorphon2023/data/all_NIKL_and_ko.csv", index=False
+        "/home/akhilesh/personal/sigmorphon2023/data/all_NIKL_experimental.csv", index=False
     )
