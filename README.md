@@ -28,6 +28,12 @@ _Citation_: If you use any part of this repository, please cite the following pa
 
 ## Neural
 
+![Platform]
+
+[![Cuda]()](https://developer.nvidia.com/cuda-toolkit-archive)
+
+[![Python](https://img.shields.io/badge/python-v3.8-blue?logo=python)](https://www.python.org/)
+
 
 ### Installation
 
@@ -43,3 +49,8 @@ All other python libraries can be installed using:
 ```
 pip install -r requirements.txt
 ```
+
+
+## Acknowledgements
+We gratefully acknowledge the support of the central HPC system ``HILBERT'' at Heinrich-Heine-University, Düsseldorf.
+
