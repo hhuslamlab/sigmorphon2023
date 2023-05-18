@@ -6,7 +6,7 @@ Each modelling approach has two parts (Study 1 and Study 2). In addition, there 
 
 _Citation_: If you use any part of this repository, please cite the following paper and the Github repository.
 
-```
+```bibtex
 @InProceedings{JeongSchmitzKakoluRSteinTang_LDL_SIGMORPHON_2023,
   author    = {Cheonkam Jeong and Dominic Schmitz and Akhilesh {Kakolu Ramarao} and Anna Sophia {Stein} and Kevin Tang},
   title     = {Linear Discriminative Learning: a competitive non-neural baseline for morphological inflection},
