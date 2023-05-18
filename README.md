@@ -52,5 +52,5 @@ pip install -r requirements.txt
 
 
 ## Acknowledgements
-We gratefully acknowledge the support of the central HPC system ``HILBERT'' at Heinrich-Heine-University, Düsseldorf.
+We gratefully acknowledge the support of the central HPC system `HILBERT` at Heinrich-Heine-University, Düsseldorf.
 
